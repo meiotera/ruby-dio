@@ -18,5 +18,15 @@ multiplicado = numeros.map do |x|
     x * 5
 end
 
-#puts "Nome do aluno: #{alunos}"
+puts "#{multiplicado}"
+puts "#{numeros}"
+puts "Nome do aluno: #{alunos}"
 puts "Nome escola: #{escola}"
+
+
+# este .map! altera o array original
+numeros.map! do |a|
+    a * 4
+end
+
+puts "Modificado #{numeros}"
