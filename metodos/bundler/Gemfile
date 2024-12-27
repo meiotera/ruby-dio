@@ -1,0 +1,3 @@
+source 'https://rubtgems.org'
+gem 'os'
+gem 'cpf_cnpj', '~> 1.0', '>= 1.0.1'
