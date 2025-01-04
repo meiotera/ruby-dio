@@ -10,3 +10,44 @@
 
 # Polimorfismo de Inclusão (Inclusion): Permite que um objeto seja tratado como uma instância de várias classes. Isso é alcançado através do uso de módulos e mixins em Ruby.
 
+class Televisao
+    def ligar
+        puts "Ligando a televisão..."
+    end
+
+    def desligar
+        puts "Desligando a televisão..."
+    end
+
+    def aumentar_volume
+        puts "Volume aumentado."
+    end
+
+    def diminuir_volume
+        puts "Volume diminuído."
+    end
+
+    def trocar_canal
+        puts "Canal trocado."
+    end
+end
+
+class SmartTV < Televisao
+    def abrir_youtube
+        puts "Abrindo o YouTube..."
+    end
+
+    def ligar
+        puts "Ligando a Smart TV com recursos avançados..."
+    end   
+end
+
+def inicializar_tv(tv)
+    tv.ligar
+end
+
+tv = Televisao.new
+lg = SmartTV.new
+lg.ligar
+inicializar_tv(tv)
+inicializar_tv(lg)
