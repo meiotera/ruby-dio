@@ -11,7 +11,7 @@ livros << "As Crônicas de Nárnia"
 
 livros.unshift("O Pequeno Príncipe")
 
-
+ 
 #recuperar um intervalo de elementos
 # puts livros[1..4]
 #recuperar o ultimo elemento
